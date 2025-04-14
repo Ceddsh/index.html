@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An advanced webpage using CSS and HTML tags">
+    <title>Espino_SpeechWebpage</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4ca8af, #8BC34A);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border: 2px solid #4CAF50;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            background: #4CAF50;
+            color: white;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 1rem;
+            background: #f9f9f9;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        section article {
+            margin-top: 1rem;
+        }
+
+        section p {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            font-family: "Georgia", serif;
+            text-align: justify;
+            color: #333;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome Cedd's Webpage</h1>
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to my personal webpage, where I share my thoughts, experiences, and ideas. This site is a space to explore meaningful topics and connect with others. Dive into the sections below to learn more about me and my journey.</p>
+        </section>
+
+        <section id="about">
+            <h2>About my Declamation Speech</h2>
+            <p>Hi everyone, I’m Judd Cedric L. Espino, and I want to talk about how being too kind and friendly can sometimes lead to bullying. I've always believed in being kind, helping others, being there for friends but sometimes people take that kindness the other way. They ask for too much, blame you for things, or assume you’re okay with everything. I’ve stayed quiet at times, not wanting to hurt others' feelings, but it left me feeling used and unseen. When people see kindness as weakness, they take advantage of it. It’s a form of bullying that’s often overlooked but can be just as hurtful. Cyrus the Great, the Persian King, believed in fairness and respect, and his kindness came with strength. I’m learning that being kind doesn’t mean saying yes to everything; it’s about helping others while also valuing yourself. To those who feel this way: your kindness is a strength, not something to be abused. Set boundaries and stand up for yourself. And to everyone else, don’t take the kind people for granted; they deserve respect too.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <article>
+                <p>Email us at <a href="mailto:juddcedric.espino@goldenlink.ph">juddcedric.espino@goldenlink.ph</a></p>
+                <form>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Advanced Webpage. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

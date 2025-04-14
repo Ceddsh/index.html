@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A webpage dedicated to Gojo Satoru, the strongest sorcerer in Jujutsu Kaisen.">
+    <title>Gojo Satoru | The Strongest Sorcerer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #1e90ff;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        img {
+            width: 70%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-container {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button-container button {
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .button-container button:hover {
+            background-color: #4682b4;
+        }
+
+        #personality-info {
+            display: none;
+            margin-top: 20px;
+            max-width: 700px;
+            color: #333;
+            text-align: left;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f1f1f1;
+        }
+
+        footer {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .normal-text {
+            font-weight: normal; /* Set to normal to remove boldness */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to my Webpage</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="content">
+        <h2>Judd Cedric Espino - Grade 9-A </h2>
+        <img src="https://cdn.pixabay.com/photo/2015/11/19/21/14/glasses-1052023_1280.jpg" 
+             alt="Judd Cedric Espino">
+        <p class="normal-text">I’m passionate about exploring different subjects and expanding my knowledge. Whether it’s in academics, sports, or hobbies, I’m always eager to learn and improve. In my free time, I enjoy biking, playing guitar and I love music, and I'm always up for new challenges. I believe in hard work, creativity, and staying curious.</p>
+
+        <div class="button-container">
+            <button onclick="togglePersonality()">My Values Education Project 😎</button>
+        </div>
+
+        <!-- Hidden Sections for Interactivity -->
+        <div id="personality-info">
+            <h3 style="font-weight: normal;">I want to show you my Values Education project. The Values Education project is a daily journal I made from August 21 to October 7. This journal shows my daily activities from Monday-Friday sharing my daily experiences as a student. I hope it reflects my understanding of the subject and the values we’ve been learning. Here it is:</h3>
+<img src="C:\Users\jamerry\OneDrive\Documents\values journal.jpg" alt="values project page 1 Image" style="width: 100%; max-width: 600px;">
+    </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Ceddluvsuu | All rights reserved</p>
+    </footer>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        function togglePersonality() {
+            const personalityInfo = document.getElementById('personality-info');
+            personalityInfo.style.display = personalityInfo.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>

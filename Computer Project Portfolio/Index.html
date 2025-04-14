@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #f0f2f5, #e0e7ff);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      padding: 3rem 2rem;
+      text-align: center;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      color: #dcdcdc;
+    }
+
+    .about {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #1e3c72;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    .portfolio-section {
+      padding: 5rem 2rem;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .portfolio-section h2 {
+      text-align: center;
+      margin-bottom: 3rem;
+      font-size: 2.5rem;
+      color: #2a2a2a;
+      font-weight: 600;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 2rem;
+    }
+
+    .card-content h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.7rem;
+      color: #1e3c72;
+    }
+
+    .card-content p {
+      color: #666;
+      font-size: 1.05rem;
+      margin-bottom: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .card-content a {
+      color: #2a5298;
+      text-decoration: none;
+      font-weight: 600;
+      border: 1px solid #2a5298;
+      padding: 0.5rem 1rem;
+      border-radius: 30px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .card-content a:hover {
+      background: #2a5298;
+      color: #fff;
+    }
+
+    .my-video {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      display: block;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      margin-top: 5rem;
+    }
+
+    footer p {
+      font-size: 1rem;
+      color: #dcdcdc;
+    }
+    /* ✨ SKILLS SECTION STYLE ✨ */
+    .skills-section {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #f9f9ff;
+      margin-top: 4rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .skills-section h2 {
+      font-size: 2.2rem;
+      color: #2a2a2a;
+      margin-bottom: 2rem;
+    }
+
+    .skills-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+    .skills-list li {
+      background: #e0e7ff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      font-weight: 500;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    footer {
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      margin-top: 5rem;
+    }
+
+    footer p {
+      font-size: 1rem;
+      color: #dcdcdc;
+    }
+  </style>
+</head>
+<body>
+  <!-- ... your header, about section, portfolio, and all project cards stay unchanged ... -->
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Espino, Judd Cedric L.</h1>
+    <p>JHS Student / Cyclist / Guitarist </p>
+  </header>
+
+  <section class="about">
+    <h2>Introduction About Me</h2>
+    <p>
+      Hello! I'm Judd Cedric L. Espino, a Grade 9 Student in Golden Link College GLC, that has many dreams that wants to accomplish in the future. I, myself wishes that my dreams would actually come true and I hopefully my future self would do it so and not be tired or bored from doing the things he would like to do. 
+      <br><br>
+      Beyond coding, I myself does have hobbies these are going out cycling, playing my guitar as well as playing online games to entertain myself to not be bored this helps me enjoy my time and my moments with myself and have a breeze of a beautiful air outside. I'm happy whenever I'm cycling because I meet new people off with cycling since there's alot of people this day do go outside with their bike (fixies), aswell as guitars I've met alot of good people with my guitar and I've loved my guitar since I got my hands of it since I've been dreaming for a long long time to have a guitar in such young age because when I saw it the first time I fell inloved with it haha.
+      <br><br>
+      I'm mostly pursuing my schoolworks ( even I'm LAZY) aswell as what I love to do in life, I absolutely love making myself tormented in things since it makes me motivated that I need to do these things right.
+    </p>
+  </section>
+
+  <section class="portfolio-section">
+    <h2>My Online Portfolio</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t1.15752-9/490987884_1016602729895500_8431951727360269197_n.png?stp=dst-png_s526x395&_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeE2azqYreVL0BJiM6d66r99Lr2UwhNTo7AuvZTCE1OjsG3hggOTYBBfJC8s5jKJwRKwQhZKPOse7offrwHxgGNk&_nc_ohc=5VIomFiOyMgQ7kNvwHDsYV5&_nc_oc=AdnEYlZrzo5B5uSDI221Y_DcxvAhJQXKjzjX1xuQRZdnnptHWTZSNsZN2UZ1dbu7rWo&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl30-3.fna&oh=03_Q7cD2AE6SkFAW1nh-IOue2xMoLLd0POlLs4P5r3v4yrsf9_txA&oe=68246538" alt="Project 1">
+        <div class="card-content">
+          <h3>Values Project </h3>
+          <p>My Values Project, this project shows my daily activies and making me understand the subject I'm writing on</p>
+          <a href="!DOCTYPE.html.html" target="_blank">View Output</a>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.15752-9/473352763_1125431079280701_1723294328080611854_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHqieWyRFu296sa6g5eXbdP6Lz3r2n2iWPovPevafaJY7MkifirxnDH9o6THzWCgKo5Wz31hHwkzF5yEwe9ZzYi&_nc_ohc=Q_3NBkE-8KsQ7kNvwFTTZ5Q&_nc_oc=AdksIt0ICTmkj-22QDaCCbZvEBaa-Stow8wu0LgXBYRm5qz6dwfpeIlkzL55d5OS8n0&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl30-1.fna&oh=03_Q7cD2AFT7CdVxauFjJ1VYUmGIrlipZh98tgsKPNv4ZtbSpBIhg&oe=68244CC6" alt="Project 2">
+        <div class="card-content">
+          <h3>Declamation Experience</h3>
+          <p>This project represents my experience and how I felt in this Program</p>
+          <a href="Declamation.html.html" target="_blank">View Output</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://scontent.fmnl30-3.fna.fbcdn.net/v/t1.15752-9/491006328_2322473198124230_3974412047381354702_n.png?_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGzstjEYPWoEpnYTzwTp8Q5JFkSd5AuZIgkWRJ3kC5kiCgJwlcm-rFStVcMXMDeOyU0rHmFVL6GBVjLQaGZYYKt&_nc_ohc=PK065iC-z30Q7kNvwE5un7T&_nc_oc=AdlvKLTCaTj-6V9-DQK4vMmSL0X7N1P59F-9w2l5tzmOVT6jT7ydEV0sUpQymAgC2TI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl30-3.fna&oh=03_Q7cD2AHgImok29S7S43bpwtHVUKaaVJa5aVmJvsEhoCH3U5pXA&oe=682476AC" alt="Project 3">
+        <div class="card-content">
+          <h3>My Project webpage</h3>
+          <p>This project webpage is where I show my feelings or anything that is related to me.</p>
+          <a href="Espino_SpeechWebpage.html.html" target="_blank">View Output</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t1.15752-9/490997270_1446985316271584_6020121394503541096_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeE-HZbKI6GOOw1rSqpyKzDzcqnwgNXrFAtyqfCA1esUC1O-GGDMqIJJ285nA33DUKKnTn8D7EFIyX9oGWTmsZIR&_nc_ohc=DSLoBnQ-RXUQ7kNvwEYKc3y&_nc_oc=Adlymhl2BKkf_ZMbd5kVwDKC-sODbjhL2hvelwJJp2FNaV71bptdNsgBKuKPh1SrQ1g&_nc_zt=23&_nc_ht=scontent.fmnl30-2.fna&oh=03_Q7cD2AHZ5YiocHH95atWzNS2-WvM8OIkVdZaim6nCL0fr98niQ&oe=68247599" alt="Project 4">
+        <div class="card-content">
+          <h3>Science Project</h3>
+          <p>This is our project that we need to make a catapult</p>
+          <a href="#">No Link</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.15752-9/490986445_986559353586849_2645452960519641739_n.png?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGrtGpQ10tR7VCKgISETj8haHbly7qZ5N5oduXLupnk3isKraM7aBTEkfz9kB3GmBr-6Wh9m9DoR8woNgjNmzkw&_nc_ohc=57a8Jlw4GPwQ7kNvwHkeRwc&_nc_oc=AdmJf8UA7a2c-HiQrcJLUzZ8TU49Gaq-zcivc-nqt07qEo_Mfm9telD9VPG7b2TaAJc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fmnl30-1.fna&oh=03_Q7cD2AFCfgnhoCYrbV9RaHAc4NBYPqIm9Fn3pQm_SIWmYlepGQ&oe=68244EFD" alt="Project 5">
+        <div class="card-content">
+          <video class="my-video" controls>
+            <source src="video1.mp4.mp4" type="video/mp4">
+          </video>
+          <h3>I Love You Challenge VALUES</h3>
+          <p>This was our project for Values 4th Quarter</p>
+          <a href="#">No Link</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Screenshot6.png.png" alt="Project 6">
+        <div class="card-content"> 
+          <video class="my-video" controls>
+          <source src="video2.mp4.mp4" type="video/mp4">
+        </video>
+          <h3>Values Face Your Fears </h3>
+          <p>This was our project, we were gonna face our fears by seeing it or touch it but I made mine by watching it since I don't find it anywhere else.</p>
+          <a href="#">No Link</a>
+        </div>
+      </div>
+
+
+
+      <div class="card">
+        <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t1.15752-9/491001572_608937325529626_538540807000388209_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEmuF-iByC2CU8_8I4XNkobTWiv6fPfWgdNaK_p899aBw98XJUZbM69duWyolV08NLsd_Eer3K28qoipS4a_nx8&_nc_ohc=2zH4hFhTeUQQ7kNvwFeUvr-&_nc_oc=Admgq7yXc70eGzpMIO4eu3GNXho4o4QbS3kpiX7pcEwARCybAddjw2ifqpOE0JYMmV4&_nc_zt=23&_nc_ht=scontent.fmnl30-2.fna&oh=03_Q7cD2AHj4kwHPj8ms59YdYYBsjpevH6NleQMeKQw3tgL-RftEg&oe=68246B58" alt="Project 7">
+        <div class="card-content">
+          <h3>TLE Project Cookery</h3>
+          <p>TLE Project where we cooked breakfast foods</p>
+          <a href="#">No Link</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Screenshot7.png.png" alt="Project 8">
+        <div class="card-content">
+          <video class="my-video" controls>
+            <source src="video3.mp4.mp4" type="video/mp4">
+          </video>
+          <h3>Video Glossary Science</h3>
+          <p>IO made about science video glossary, by explaining how acceleration works and how you can answer them with formula's.</p>
+          <a href="#">No Link</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Screenshot8.png.png" alt="Project 9">
+        <div class="card-content">
+          <h3>Filipino Project</h3>
+          <p>Filipino Project about Jose Rizal and what're his contributions.</p>
+          <a href="Screenshot9.png">View Picture</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="Screenshot10.png" alt="Project 10">
+        <div class="card-content">
+          <h3>Math Activity</h3>
+          <p>I did a Math Activity and I perfected it, I knew how to do this SOH-CAH-TOA.</p>
+          <a href="#">No Link</a>
+        </div>
+      </div>
+      </div> <!-- End of .grid -->
+      </section> <!-- End of .portfolio-section -->
+      
+      <!-- ✨ SKILLS SECTION NOW CORRECTLY BELOW ALL PROJECTS -->
+      <section class="skills-section">
+        <h2>My Skills</h2>
+        <ul class="skills-list">
+          <li>HTML & CSS</li>
+          <li>Video Editing</li>
+          <li>Playing Guitar</li>
+          <li>Cycling</li>
+          <li>Responsive Designs</li>
+          <li>Github</li>
+          
+        </ul>
+      </section>
+      
+
+  <footer>
+    <p>&copy; 2025 Espino, Judd Cedric L. All rights reserved.</p>
+  </footer>
+</body>
+</html>
